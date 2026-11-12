@@ -1,0 +1,16 @@
+dataset,method,input_features,trainable_parameters,state_tensor_bytes,mean_model_file_bytes,linear_macs_per_forward,model_files
+CICIoT2023,ecotrust_agent,45,28655,115652,121311.0,28032,3
+CICIoT2023,fedadam,45,28655,115652,121311.0,28032,3
+CICIoT2023,fedavg,45,28655,115652,121311.0,28032,3
+CICIoT2023,fedprox,45,28655,115652,121311.0,28032,3
+CICIoT2023,trust_weighted_all_clients,45,28655,115652,121311.0,28032,3
+Edge-IIoTset,ecotrust_agent,79,37393,150604,156319.0,36736,3
+Edge-IIoTset,fedadam,79,37393,150604,156319.0,36736,3
+Edge-IIoTset,fedavg,79,37393,150604,156319.0,36736,3
+Edge-IIoTset,fedprox,79,37393,150604,156319.0,36736,3
+Edge-IIoTset,trust_weighted_all_clients,79,37393,150604,156319.0,36736,3
+TON_IoT,ecotrust_agent,122,48444,194808,200479.0,47744,3
+TON_IoT,fedadam,122,48444,194808,200479.0,47744,3
+TON_IoT,fedavg,122,48444,194808,200479.0,47744,3
+TON_IoT,fedprox,122,48444,194808,200479.0,47744,3
+TON_IoT,trust_weighted_all_clients,122,48444,194808,200479.0,47744,3

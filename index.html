@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-backed EcoTrust-FLIDS federated intrusion-detection research demonstrator.">
+  <title>EcoTrust-FLIDS · Research Demonstrator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand-lockup">
+      <div class="brand-mark" aria-hidden="true">ET</div>
+      <div>
+        <div class="brand-name">EcoTrust-FLIDS</div>
+        <div class="brand-subtitle">Research evidence demonstrator</div>
+      </div>
+    </div>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#simulator">Simulator</a>
+      <a href="#explainability">Explanation</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#robustness">Robustness</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+    <div class="verified-pill"><span></span> Stages 09–15 verified</div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-shell" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Federated IoT intrusion detection · evidence replay</p>
+        <h1>Inspect how trust, energy, quality, drift, and latency shape federated participation.</h1>
+        <p class="hero-lede">A transparent, paper-facing interface built from the accepted EcoTrust-FLIDS experiment ledger. Explore controller decisions, compare recorded policies, and download the exact supporting evidence.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#simulator">Open simulation</a>
+          <button class="button button-secondary" id="downloadScenarioTop" type="button">Download scenario</button>
+        </div>
+        <div class="boundary-note">
+          <strong>Evidence boundary.</strong> Recorded endpoints are marked as accepted evidence. Custom controls create a deterministic what-if simulation; they do not generate new experimental results.
+        </div>
+      </div>
+      <aside class="hero-evidence" aria-label="Evidence summary">
+        <div class="evidence-heading">
+          <span>Accepted corpus</span>
+          <span class="mono">full protocol</span>
+        </div>
+        <div class="evidence-grid">
+          <div><strong>447</strong><span>ledger rows</span></div>
+          <div><strong>225</strong><span>confidence intervals</span></div>
+          <div><strong>12</strong><span>paired tests</span></div>
+          <div><strong>2,394</strong><span>checksums</span></div>
+        </div>
+        <div class="dataset-list">
+          <div><span class="dataset-dot edge"></span><span>Edge-IIoTset</span><em>20 clients</em></div>
+          <div><span class="dataset-dot ton"></span><span>TON_IoT</span><em>20 clients</em></div>
+          <div><span class="dataset-dot cic"></span><span>CICIoT2023</span><em>20 clients</em></div>
+        </div>
+        <div class="evidence-footer">
+          <span>Binary intrusion detection</span>
+          <span>30 rounds</span>
+          <span>Full mode</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section page-shell" id="simulator">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Interactive controller</p>
+          <h2>Federated round simulator</h2>
+        </div>
+        <div class="mode-badge"><span>WHAT-IF</span> deterministic replay</div>
+      </div>
+
+      <div class="simulator-layout">
+        <form class="control-panel" id="simulationForm">
+          <div class="control-panel-title">
+            <h3>Scenario controls</h3>
+            <button class="text-button" type="button" id="resetSimulation">Reset</button>
+          </div>
+          <label class="field-label" for="datasetSelect">Dataset</label>
+          <select id="datasetSelect">
+            <option>Edge-IIoTset</option>
+            <option selected>TON_IoT</option>
+            <option>CICIoT2023</option>
+          </select>
+
+          <label class="field-label" for="policySelect">Selection policy</label>
+          <select id="policySelect">
+            <option value="telemetry_heuristic" selected>EcoTrust telemetry heuristic</option>
+            <option value="static_score">Static trust–energy score</option>
+            <option value="round_robin">Round robin</option>
+            <option value="all_clients">All clients</option>
+          </select>
+
+          <div class="range-field">
+            <div><label for="budgetRange">Participation budget</label><output id="budgetOutput">60%</output></div>
+            <input id="budgetRange" type="range" min="20" max="100" step="5" value="60">
+            <p>Maximum share of clients considered for the round.</p>
+          </div>
+
+          <div class="range-field">
+            <div><label for="trustRange">Minimum trust</label><output id="trustOutput">0.55</output></div>
+            <input id="trustRange" type="range" min="0.35" max="0.85" step="0.05" value="0.55">
+          </div>
+
+          <div class="range-field">
+            <div><label for="energyRange">Minimum energy</label><output id="energyOutput">120 J</output></div>
+            <input id="energyRange" type="range" min="60" max="600" step="20" value="120">
+          </div>
+
+          <div class="range-field">
+            <div><label for="driftRange">Drift stress</label><output id="driftOutput">20%</output></div>
+            <input id="driftRange" type="range" min="0" max="100" step="5" value="20">
+          </div>
+
+          <div class="range-field">
+            <div><label for="latencyRange">Network latency</label><output id="latencyOutput">250 ms</output></div>
+            <input id="latencyRange" type="range" min="0" max="1000" step="50" value="250">
+          </div>
+
+          <button class="button button-primary button-block" type="submit">Run federated round</button>
+          <p class="control-footnote">Controller thresholds and weights are taken from the implemented deterministic policy. No test data is used by this interface.</p>
+        </form>
+
+        <div class="simulation-stage">
+          <div class="stage-toolbar">
+            <div>
+              <span class="stage-label">Round <strong id="roundNumber">01</strong></span>
+              <span class="stage-dataset" id="stageDataset">TON_IoT</span>
+            </div>
+            <div class="run-state" id="runState"><span></span> Ready</div>
+          </div>
+          <div class="network-canvas" id="networkCanvas" aria-label="Federated client network">
+            <svg id="networkSvg" viewBox="0 0 820 460" role="img" aria-label="Client nodes connected to the federated server"></svg>
+            <div class="server-core">
+              <span class="server-icon" aria-hidden="true">Σ</span>
+              <strong>Global model</strong>
+              <small>Trust-weighted aggregation</small>
+            </div>
+          </div>
+          <div class="simulation-legend">
+            <span><i class="legend-dot selected"></i>Selected</span>
+            <span><i class="legend-dot sleeping"></i>Energy-save sleep</span>
+            <span><i class="legend-dot excluded"></i>Threshold excluded</span>
+          </div>
+          <div class="metric-strip">
+            <div><span>Selected</span><strong id="metricSelected">12 / 20</strong></div>
+            <div><span>Modeled round energy</span><strong id="metricEnergy">96.9 J</strong></div>
+            <div><span>Communication</span><strong id="metricComm">4.44 MB</strong></div>
+            <div><span>Recorded endpoint F1</span><strong id="metricF1">0.9758</strong></div>
+          </div>
+          <div class="metric-disclosure" id="metricDisclosure">
+            <span class="status-chip evidence">Accepted evidence</span>
+            Stage 14 seed-42 endpoint at the registered 60% participation budget. Custom settings retain this value only as a reference, not a prediction.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="explainability">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Controller transparency</p>
+            <h2>Why was this client selected?</h2>
+          </div>
+          <p class="section-intro">Select a client to inspect the exact contribution of each telemetry term. This explains the controller decision—not the neural detector’s feature attribution.</p>
+        </div>
+        <div class="explain-layout">
+          <div class="client-table-card">
+            <div class="table-heading">
+              <h3>Client telemetry</h3>
+              <span id="clientTableCount">20 clients</span>
+            </div>
+            <div class="client-table-wrap">
+              <table class="client-table">
+                <thead><tr><th>Client</th><th>Trust</th><th>Energy</th><th>Drift</th><th>Decision</th></tr></thead>
+                <tbody id="clientTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="explanation-card">
+            <div class="explanation-head">
+              <div>
+                <p class="eyebrow">Selected client</p>
+                <h3 id="explainClient">Client 07</h3>
+              </div>
+              <span class="decision-pill selected" id="explainDecision">Selected</span>
+            </div>
+            <div class="score-total">
+              <span>Priority score</span>
+              <strong id="explainScore">0.000</strong>
+            </div>
+            <div class="contribution-chart" id="contributionChart"></div>
+            <div class="formula-box">
+              <code>0.45·trust + 0.20·energy + 0.25·quality + 0.35·drift − 0.10·latency</code>
+            </div>
+            <p class="explanation-reason" id="explainReason">This client meets the trust and energy gates and ranks inside the participation budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-shell" id="evidence">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Recorded Stage 14 evidence</p>
+          <h2>Policy trade-off explorer</h2>
+        </div>
+        <div class="dataset-tabs" id="policyDatasetTabs" role="tablist" aria-label="Policy dataset">
+          <button type="button" data-dataset="Edge-IIoTset">Edge-IIoTset</button>
+          <button type="button" data-dataset="TON_IoT" class="active">TON_IoT</button>
+          <button type="button" data-dataset="CICIoT2023">CICIoT2023</button>
+        </div>
+      </div>
+      <div class="policy-grid">
+        <div class="chart-card chart-card-wide">
+          <div class="chart-card-head">
+            <div><h3>F1 and modeled energy saving</h3><p>Six matched policies · seed 42 · 30 rounds</p></div>
+            <span class="status-chip evidence">Accepted evidence</span>
+          </div>
+          <div id="policyChart" class="policy-chart"></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-card-head">
+            <div><h3>Round trace</h3><p id="roundTraceLabel">TON_IoT · telemetry heuristic</p></div>
+          </div>
+          <svg id="roundTraceChart" class="round-chart" viewBox="0 0 640 330" role="img" aria-label="Round-level F1 and energy saving trace"></svg>
+          <div class="round-legend"><span><i class="line-swatch f1"></i>F1</span><span><i class="line-swatch energy"></i>Energy saving</span></div>
+        </div>
+      </div>
+
+      <div class="results-table-card">
+        <table class="results-table">
+          <thead><tr><th>Policy</th><th>F1</th><th>Accuracy</th><th>Modeled energy</th><th>Saving</th><th>Communication</th><th>Controller overhead</th></tr></thead>
+          <tbody id="policyTableBody"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Energy values are model-estimated. Stage 15 supports resource/controller-overhead reporting but does not support a direct hardware-energy-reduction claim.</p>
+    </section>
+
+    <section class="section section-dark" id="robustness">
+      <div class="page-shell">
+        <div class="section-heading dark-heading">
+          <div>
+            <p class="eyebrow">Detection evidence</p>
+            <h2>Rare-attack inspection</h2>
+          </div>
+          <p class="section-intro">Per-attack rows retain original attack labels while evaluating binary detection. They are not multiclass classification results.</p>
+        </div>
+        <div class="robust-controls">
+          <label>Dataset <select id="attackDataset"><option>Edge-IIoTset</option><option>TON_IoT</option><option selected>CICIoT2023</option></select></label>
+          <label>Method <select id="attackMethod"></select></label>
+          <label>Maximum support <select id="attackSupport"><option value="10">10</option><option value="25" selected>25</option><option value="100">100</option><option value="999999">All</option></select></label>
+        </div>
+        <div class="rare-table-card">
+          <table class="rare-table">
+            <thead><tr><th>Attack label</th><th>Support / seed</th><th>Seeds</th><th>Detected</th><th>Missed</th><th>Recall</th></tr></thead>
+            <tbody id="rareAttackBody"></tbody>
+          </table>
+          <div class="empty-state" id="rareEmpty" hidden>No rows match this filter.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-shell" id="claims">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Claim discipline</p>
+          <h2>What the evidence supports</h2>
+        </div>
+        <p class="section-intro">The interface preserves the final claim–evidence matrix, including unsupported boundaries and statistically non-significant comparisons.</p>
+      </div>
+      <div class="claim-grid" id="claimGrid"></div>
+      <div class="stat-callout">
+        <div class="stat-icon" aria-hidden="true">p</div>
+        <div>
+          <strong>Statistical interpretation</strong>
+          <p>Modeled energy-saving comparisons are significant after Holm correction. Most macro-F1 and attack-F1 comparisons are not significant and must not be presented as superiority claims.</p>
+        </div>
+        <span class="mono">Holm α = 0.05</span>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="downloads">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reproducibility</p>
+            <h2>Download the evidence</h2>
+          </div>
+          <p class="section-intro">Compact, checksum-tracked files copied from the accepted Stage 15 output and completion manifests.</p>
+        </div>
+        <div class="download-grid" id="downloadGrid"></div>
+        <div class="download-actions">
+          <button class="button button-primary" id="downloadScenario" type="button">Download current scenario JSON</button>
+          <a class="button button-secondary" href="downloads/evidence_manifest.json" download>Download provenance manifest</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-inner">
+      <div>
+        <strong>EcoTrust-FLIDS</strong>
+        <p>Evidence-backed research demonstrator · static and GitHub Pages ready</p>
+      </div>
+      <div class="footer-boundary">
+        <span>Model-estimated energy</span>
+        <span>Binary detection</span>
+        <span>Frozen accepted evidence</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

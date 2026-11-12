@@ -1,0 +1,40 @@
+{
+  "artifacts": {
+    "metrics": "project://results/publication/stage13/controller_generalization_metrics.csv",
+    "predictions": "project://results/publication/stage13/controller_predictions.csv"
+  },
+  "completed_at": "2026-10-24T11:42:56+00:00",
+  "folds": {
+    "CICIoT2023": {
+      "refit_on_held_out": false,
+      "status": "completed",
+      "test_rows": 600,
+      "training_datasets": [
+        "Edge-IIoTset",
+        "TON_IoT"
+      ]
+    },
+    "Edge-IIoTset": {
+      "refit_on_held_out": false,
+      "status": "completed",
+      "test_rows": 600,
+      "training_datasets": [
+        "TON_IoT",
+        "CICIoT2023"
+      ]
+    },
+    "TON_IoT": {
+      "refit_on_held_out": false,
+      "status": "completed",
+      "test_rows": 600,
+      "training_datasets": [
+        "Edge-IIoTset",
+        "CICIoT2023"
+      ]
+    }
+  },
+  "mode": "full",
+  "stage": 13,
+  "started_at": "2026-10-24T11:42:43+00:00",
+  "status": "completed"
+}

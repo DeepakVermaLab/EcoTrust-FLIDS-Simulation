@@ -1,0 +1,82 @@
+{
+  "artifacts": {
+    "aggregate_metrics.csv": {
+      "path": "project://results/publication/stage15/aggregate_metrics.csv",
+      "rows": 447
+    },
+    "checksums.sha256": {
+      "files": 2394,
+      "path": "project://results/publication/stage15/checksums.sha256"
+    },
+    "claim_evidence_matrix.csv": {
+      "path": "project://results/publication/stage15/claim_evidence_matrix.csv",
+      "rows": 9
+    },
+    "complexity_metrics.csv": {
+      "path": "project://results/publication/stage15/complexity_metrics.csv",
+      "rows": 15
+    },
+    "confidence_intervals.csv": {
+      "path": "project://results/publication/stage15/confidence_intervals.csv",
+      "rows": 225
+    },
+    "environment.json": {
+      "path": "project://results/publication/stage15/environment.json"
+    },
+    "experiment_ledger.csv": {
+      "path": "project://results/publication/stage15/experiment_ledger.csv",
+      "rows": 447
+    },
+    "per_attack_metrics.csv": {
+      "path": "project://results/publication/stage15/per_attack_metrics.csv",
+      "rows": 870
+    },
+    "significance_tests.csv": {
+      "path": "project://results/publication/stage15/significance_tests.csv",
+      "rows": 12
+    }
+  },
+  "completed_at": "2026-11-02T10:47:03+00:00",
+  "device": "cpu",
+  "mode": "full",
+  "prerequisites": {
+    "10": {
+      "manifest": "project://logs/10_non_iid_dropout_scalability_full_manifest.json",
+      "status": "completed"
+    },
+    "11": {
+      "manifest": "project://logs/11_temporal_drift_and_forgetting_full_manifest.json",
+      "status": "completed"
+    },
+    "12": {
+      "manifest": "project://logs/12_malicious_client_robustness_full_manifest.json",
+      "status": "completed"
+    },
+    "13": {
+      "manifest": "project://logs/13_cross_dataset_controller_generalization_full_manifest.json",
+      "status": "completed"
+    },
+    "14": {
+      "manifest": "project://logs/14_resource_energy_policy_comparison_full_manifest.json",
+      "status": "completed"
+    },
+    "9": {
+      "manifest": "project://logs/09_recent_baselines_and_multiseed_full_manifest.json",
+      "status": "completed"
+    }
+  },
+  "required_artifacts": [
+    "experiment_ledger.csv",
+    "aggregate_metrics.csv",
+    "confidence_intervals.csv",
+    "significance_tests.csv",
+    "claim_evidence_matrix.csv",
+    "per_attack_metrics.csv",
+    "complexity_metrics.csv",
+    "environment.json",
+    "checksums.sha256"
+  ],
+  "stage": 15,
+  "started_at": "2026-11-02T10:36:35+00:00",
+  "status": "completed"
+}

@@ -1,0 +1,10 @@
+claim,evidence,status
+Matched multi-seed baseline comparison,stage09; confidence_intervals.csv; significance_tests.csv,supported
+"Non-IID, dropout, straggler, and scalability sensitivity",stage10 manifest and run summaries,supported
+Continual adaptation and forgetting,stage11 manifest and window metrics,supported
+Malicious-client robustness sensitivity,stage12 manifest and run summaries,supported
+Leave-one-dataset-out controller generalization,stage13 manifest and decision metrics,supported
+Resource and controller overhead,stage14 manifest and summaries,supported
+Direct hardware energy reduction,stage14 energy_measurement_type,not_supported; energy is model-estimated
+Per-attack binary detection performance,per_attack_metrics.csv,supported
+Multiclass attack classification,not evaluated by this binary pipeline,not_supported

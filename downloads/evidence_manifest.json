@@ -1,0 +1,76 @@
+{
+  "source": "accepted EcoTrust-FLIDS Stage 09-15 artifacts",
+  "sanitization": "internal filesystem paths replaced with portable project:// references",
+  "files": [
+    {
+      "file": "downloads/aggregate_metrics.csv",
+      "bytes": 202456,
+      "sha256": "939df409f9a5cc6d3230a44636b5a9407a992e2769203c5a748ec1f487631808"
+    },
+    {
+      "file": "downloads/claim_evidence_matrix.csv",
+      "bytes": 834,
+      "sha256": "986d26773990b8b9c36adca8a4bc97c8a06036e7bdd59a0629357911ae8ddf94"
+    },
+    {
+      "file": "downloads/complexity_metrics.csv",
+      "bytes": 983,
+      "sha256": "e1b70e11e192f72ce665a98983a4bdc0e5789bdc941b5e70c4d4c4d142fc3d76"
+    },
+    {
+      "file": "downloads/confidence_intervals.csv",
+      "bytes": 24212,
+      "sha256": "af26c191546d2b550f7873f0aecff79742f4882803741346fbee271967db5f8d"
+    },
+    {
+      "file": "downloads/environment.json",
+      "bytes": 600,
+      "sha256": "1f459249388a5348f60ff2b7e9c03bf1fe472a7a8a72abf2af80e18e3a5e2d74"
+    },
+    {
+      "file": "downloads/manifests/09_recent_baselines_and_multiseed_full_manifest.json",
+      "bytes": 104783,
+      "sha256": "7abe79804b6ee4df7e440760a4afd75d07b721f3e34406d9d7bbd5c38f324d7f"
+    },
+    {
+      "file": "downloads/manifests/10_non_iid_dropout_scalability_full_manifest.json",
+      "bytes": 436720,
+      "sha256": "b272611590e4b6428741d35934521a877b5129afb238cc3842bcec91974f28d8"
+    },
+    {
+      "file": "downloads/manifests/11_temporal_drift_and_forgetting_full_manifest.json",
+      "bytes": 68475,
+      "sha256": "e2fdc9fc1f00b46d459eb95424b95f42b5838b3b396ceecabe629d5d44b1a978"
+    },
+    {
+      "file": "downloads/manifests/12_malicious_client_robustness_full_manifest.json",
+      "bytes": 452639,
+      "sha256": "81d14acafdf1ab869bca6187c8745c75a0c49122a37273ca7423bcde146599f5"
+    },
+    {
+      "file": "downloads/manifests/13_cross_dataset_controller_generalization_full_manifest.json",
+      "bytes": 951,
+      "sha256": "8a2f3c6215a9a705eb96ed49b0d7fbb502c6c8497076c0e856372d6aed0333a4"
+    },
+    {
+      "file": "downloads/manifests/14_resource_energy_policy_comparison_full_manifest.json",
+      "bytes": 46928,
+      "sha256": "d5f96280f5f464d135583afced6bc3659ee82f7e35d8eb9682190d101d4d6d5e"
+    },
+    {
+      "file": "downloads/manifests/15_final_statistics_and_reproducibility_full_manifest.json",
+      "bytes": 2505,
+      "sha256": "b07017647bb94e74890dd1bee867056a7e5b2f64466854802c4a716ab1383882"
+    },
+    {
+      "file": "downloads/per_attack_metrics.csv",
+      "bytes": 109870,
+      "sha256": "c1df0722aa4cfa42012cf0bb6a5b1b6caa7f50160c49c679961da609e099ecff"
+    },
+    {
+      "file": "downloads/significance_tests.csv",
+      "bytes": 2506,
+      "sha256": "afb1f2fe0c9a10e99eddf8bb261bbf8a9aa066568146798318cf46606e06407e"
+    }
+  ]
+}

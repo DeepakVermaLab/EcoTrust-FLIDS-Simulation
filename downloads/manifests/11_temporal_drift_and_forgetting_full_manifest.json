@@ -1,0 +1,1903 @@
+{
+  "completed_at": "2026-10-24T06:39:23+00:00",
+  "device": "cpu",
+  "mode": "full",
+  "runs": {
+    "CICIoT2023/ecotrust_class_balanced_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:39:23+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.9188284766388554,
+          "backward_transfer": 0.031861791256975525,
+          "final_window_macro_f1": [
+            0.922735602974996,
+            0.9129688227200253,
+            0.9079377077458306,
+            0.912996046987649,
+            0.9375042027657761
+          ],
+          "forgetting": 0.0042685401948769075,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.9922,
+          "attack_f1": 0.9959972904735513,
+          "balanced_accuracy": 0.9692854444143453,
+          "brier_score": 0.005284549654434943,
+          "expected_calibration_error": 0.002145489192008931,
+          "macro_f1": 0.9220048806225902,
+          "mcc": 0.8487958684393069,
+          "pr_auc": 0.9999550356082874,
+          "precision": 0.998703303488731,
+          "recall": 0.9933059018608364,
+          "roc_auc": 0.9980775701656475
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 39.50267145499993,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:38:41+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 42.172838159000094
+      }
+    },
+    "CICIoT2023/ecotrust_class_balanced_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:38:41+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.9155803456861804,
+          "backward_transfer": 0.008909989907415455,
+          "final_window_macro_f1": [
+            0.9101933220810848,
+            0.9249091789466053,
+            0.912834694961053,
+            0.9206834532071864,
+            0.9092810792349726
+          ],
+          "forgetting": 0.0037010575763092857,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.99244,
+          "attack_f1": 0.9961268110744513,
+          "balanced_accuracy": 0.9380197480492688,
+          "brier_score": 0.00546325773754047,
+          "expected_calibration_error": 0.0015215149539709232,
+          "macro_f1": 0.9195097895771259,
+          "mcc": 0.8398510839026706,
+          "pr_auc": 0.9998982675416288,
+          "precision": 0.9971894553287517,
+          "recall": 0.9950664292001883,
+          "roc_auc": 0.9957193926516827
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 39.17803050700013,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:37:59+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 41.81302831599987
+      }
+    },
+    "CICIoT2023/ecotrust_class_balanced_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/ecotrust_class_balanced_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:37:59+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.9202491704425488,
+          "backward_transfer": 0.05902309267866865,
+          "final_window_macro_f1": [
+            0.9088508195388257,
+            0.9224738591543836,
+            0.9216573761159875,
+            0.9212796375816088,
+            0.9269841598219387
+          ],
+          "forgetting": 0.00029763333169471884,
+          "recovery_rounds": 3.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.99202,
+          "attack_f1": 0.9959054665613103,
+          "balanced_accuracy": 0.9645274621437978,
+          "brier_score": 0.005570013940680703,
+          "expected_calibration_error": 0.002488256972432172,
+          "macro_f1": 0.9198093725285987,
+          "mcc": 0.8439635398243309,
+          "pr_auc": 0.9999397888272807,
+          "precision": 0.9984773035927405,
+          "recall": 0.9933468443571004,
+          "roc_auc": 0.9974490085842114
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 34.715302719999954,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:37:22+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 37.282532960000026
+      }
+    },
+    "CICIoT2023/naive_fedavg/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:34:22+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.721349994600628,
+          "backward_transfer": -0.14178367777189943,
+          "final_window_macro_f1": [
+            0.7366979127253636,
+            0.7132980553416668,
+            0.6998468193075152,
+            0.7109076936296101,
+            0.7459994919989841
+          ],
+          "forgetting": 0.18441407599787396,
+          "recovery_rounds": 15.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.98344,
+          "attack_f1": 0.9915927136851939,
+          "balanced_accuracy": 0.6487961563284107,
+          "brier_score": 0.012581745798176067,
+          "expected_calibration_error": 0.014727651766538603,
+          "macro_f1": 0.7223485364991359,
+          "mcc": 0.5256917165781143,
+          "pr_auc": 0.9996975955231,
+          "precision": 0.9837218204162218,
+          "recall": 0.99959057503736,
+          "roc_auc": 0.9873150382268989
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 50.68299938699988,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:33:28+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 53.843345732000216
+      }
+    },
+    "CICIoT2023/naive_fedavg/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:33:28+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.843707490032199,
+          "backward_transfer": -0.02225117055581219,
+          "final_window_macro_f1": [
+            0.8463190498545751,
+            0.8512666028152593,
+            0.8573559741101093,
+            0.8368442310243638,
+            0.8267515923566879
+          ],
+          "forgetting": 0.03922495790834232,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.98912,
+          "attack_f1": 0.9944541858663296,
+          "balanced_accuracy": 0.7954964463531734,
+          "brier_score": 0.00858391576452123,
+          "expected_calibration_error": 0.00902296309649946,
+          "macro_f1": 0.8546694409415505,
+          "mcc": 0.7258177208237921,
+          "pr_auc": 0.9996427370515022,
+          "precision": 0.9904758036675263,
+          "recall": 0.9984646563901001,
+          "roc_auc": 0.9850213157982776
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 47.896733869999935,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:32:37+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 50.85153125700026
+      }
+    },
+    "CICIoT2023/naive_fedavg/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/naive_fedavg/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:32:37+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.9084017807208216,
+          "backward_transfer": 0.05697298013115268,
+          "final_window_macro_f1": [
+            0.906076549364571,
+            0.9121539689934884,
+            0.9175902244955954,
+            0.8976654940837864,
+            0.9085226666666667
+          ],
+          "forgetting": 0.000680629184466458,
+          "recovery_rounds": 3.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.9918,
+          "attack_f1": 0.9958048540907789,
+          "balanced_accuracy": 0.901637822571335,
+          "brier_score": 0.005962543684326283,
+          "expected_calibration_error": 0.0029003876361250345,
+          "macro_f1": 0.9075144199907157,
+          "mcc": 0.8151257035858028,
+          "pr_auc": 0.9998717440169229,
+          "precision": 0.995458543870057,
+          "recall": 0.9961514053511843,
+          "roc_auc": 0.9946534204352038
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 49.861537092999924,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:31:44+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 53.008898083000076
+      }
+    },
+    "CICIoT2023/reservoir_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:37:21+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.9130021819581733,
+          "backward_transfer": 0.06564942052141826,
+          "final_window_macro_f1": [
+            0.9180350456707312,
+            0.9094649496761936,
+            0.912834694961053,
+            0.8943082194828891,
+            0.930368
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 13.5
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.99254,
+          "attack_f1": 0.9961828545698292,
+          "balanced_accuracy": 0.9130449409347577,
+          "brier_score": 0.005608688453410312,
+          "expected_calibration_error": 0.0030301553628593767,
+          "macro_f1": 0.916400669510057,
+          "mcc": 0.832831815280297,
+          "pr_auc": 0.9998892474671077,
+          "precision": 0.9959891953834821,
+          "recall": 0.9963765890806362,
+          "roc_auc": 0.9953619906263027
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 55.736848362000046,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:36:22+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 59.05066013600026
+      }
+    },
+    "CICIoT2023/reservoir_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:36:22+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.7493318531923546,
+          "backward_transfer": -0.07347967873226513,
+          "final_window_macro_f1": [
+            0.7661582624752551,
+            0.7438979316847733,
+            0.7536897663962467,
+            0.7469473657992889,
+            0.7359659396062092
+          ],
+          "forgetting": 0.15168797989965557,
+          "recovery_rounds": 10.0
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.98416,
+          "attack_f1": 0.9919528551107498,
+          "balanced_accuracy": 0.6707972700994798,
+          "brier_score": 0.01308952915622421,
+          "expected_calibration_error": 0.014187588667422533,
+          "macro_f1": 0.7453435161629698,
+          "mcc": 0.5554358854707192,
+          "pr_auc": 0.9989735823230952,
+          "precision": 0.9847289746020859,
+          "recall": 0.9992835063153801,
+          "roc_auc": 0.9567884944257824
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 57.70030491700004,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:35:21+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 61.09155667499999
+      }
+    },
+    "CICIoT2023/reservoir_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/CICIoT2023/reservoir_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:35:21+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.49850387653514633,
+          "backward_transfer": -0.35583646868122154,
+          "final_window_macro_f1": [
+            0.49992976541649103,
+            0.4939911448450348,
+            0.49424706031103804,
+            0.49961975886730864,
+            0.5047316532358592
+          ],
+          "forgetting": 0.39789729886300457,
+          "recovery_rounds": null
+        },
+        "dataset": "CICIoT2023",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.97706,
+          "attack_f1": 0.988395738696721,
+          "balanced_accuracy": 0.5021617887026064,
+          "brier_score": 0.021858770682562017,
+          "expected_calibration_error": 0.022312910553216967,
+          "macro_f1": 0.4985193905238143,
+          "mcc": 0.059193520624210474,
+          "pr_auc": 0.9980767867783553,
+          "precision": 0.9770772492699124,
+          "recall": 0.999979528751868,
+          "roc_auc": 0.9187628219866327
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 55.62048554199987,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:34:22+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "CICIoT2023",
+          "order_column": "original_row_position",
+          "order_type": "source_order",
+          "rows": 200000,
+          "test_rows": 50000,
+          "test_usage": "final evaluation only",
+          "unique_values": 200000,
+          "valid_fraction": null,
+          "window_sizes": [
+            40000,
+            40000,
+            40000,
+            40000,
+            40000
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 58.89786580500004
+      }
+    },
+    "Edge-IIoTset/ecotrust_class_balanced_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:17:13+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 9.572066821139646e-05,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 2.2307686580196984e-30,
+          "expected_calibration_error": 1.3169374821744818e-16,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 24.987784156999993,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:16:45+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 27.442493085000024
+      }
+    },
+    "Edge-IIoTset/ecotrust_class_balanced_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:16:45+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 2.391087173909435e-35,
+          "expected_calibration_error": 5.625535797931001e-19,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 22.583338724000015,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:16:20+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 24.9668949710001
+      }
+    },
+    "Edge-IIoTset/ecotrust_class_balanced_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/ecotrust_class_balanced_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:16:20+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 3.371823624634066e-30,
+          "expected_calibration_error": 1.807057694308239e-16,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 30.065038093999988,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:15:48+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 32.54925063900009
+      }
+    },
+    "Edge-IIoTset/naive_fedavg/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:13:30+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 9.664809807872656e-35,
+          "expected_calibration_error": 1.4003241233881497e-18,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 35.293509195,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:12:52+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 38.218753218000074
+      }
+    },
+    "Edge-IIoTset/naive_fedavg/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:12:51+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 1.1121008390964529e-36,
+          "expected_calibration_error": 1.4258012064460071e-19,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 7.641605850999998,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:08:04+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 38.97635413499984
+      }
+    },
+    "Edge-IIoTset/naive_fedavg/seed_42": {
+      "skipped": true,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/naive_fedavg/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:08:04+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 2.1680266644553817e-32,
+          "expected_calibration_error": 2.319600493478219e-17,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 0.9999999999999999
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 752.0546875,
+        "process_cpu_seconds_this_invocation": 43.348656891999994,
+        "seed": 42,
+        "skipped": true,
+        "stage": 11,
+        "started_at": "2026-10-24T06:07:15+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 48.32111080300001
+      }
+    },
+    "Edge-IIoTset/reservoir_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:15:48+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 7.592092805003371e-35,
+          "expected_calibration_error": 1.1505019236266814e-18,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 43.895030219000006,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:15:00+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 47.10269176499992
+      }
+    },
+    "Edge-IIoTset/reservoir_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:15:00+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 3.540242024979501e-31,
+          "expected_calibration_error": 8.372496734359268e-17,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 42.01550816200002,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:14:15+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 45.256409004000034
+      }
+    },
+    "Edge-IIoTset/reservoir_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/Edge-IIoTset/reservoir_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:14:15+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 1.0,
+          "backward_transfer": 0.0,
+          "final_window_macro_f1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "forgetting": 0.0,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "Edge-IIoTset",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 1.0,
+          "attack_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier_score": 8.945289677504822e-32,
+          "expected_calibration_error": 4.495856834373503e-17,
+          "macro_f1": 1.0,
+          "mcc": 1.0,
+          "pr_auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "roc_auc": 1.0
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 816.76171875,
+        "process_cpu_seconds_this_invocation": 41.890979844,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:13:30+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "Edge-IIoTset",
+          "order_column": "icmp.transmit_timestamp",
+          "order_type": "chronological",
+          "rows": 126240,
+          "test_rows": 31560,
+          "test_usage": "final evaluation only",
+          "unique_values": 73,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            25248,
+            25248,
+            25248,
+            25248,
+            25248
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 44.954957788
+      }
+    },
+    "TON_IoT/ecotrust_class_balanced_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:31:29+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.7972296468140507,
+          "backward_transfer": -0.16801204134287845,
+          "final_window_macro_f1": [
+            0.49998305486833633,
+            0.8168788871451593,
+            0.7744347065817796,
+            0.9570566179002591,
+            0.9377949675747195
+          ],
+          "forgetting": 0.22359983232452757,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.907731349434437,
+          "attack_f1": 0.85543396995854,
+          "balanced_accuracy": 0.8785020131536734,
+          "brier_score": 0.0605149979383027,
+          "expected_calibration_error": 0.07830602711674964,
+          "macro_f1": 0.8938383872696989,
+          "mcc": 0.7962171508195639,
+          "pr_auc": 0.9695251045019031,
+          "precision": 0.9447884997935668,
+          "recall": 0.7815206929740135,
+          "roc_auc": 0.9853117477516636
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 56.774913379000054,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:30:29+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 59.68186423599991
+      }
+    },
+    "TON_IoT/ecotrust_class_balanced_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:30:29+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.7418920265430915,
+          "backward_transfer": -0.26626255678404687,
+          "final_window_macro_f1": [
+            1.0,
+            0.40461365429441526,
+            0.6771048135023066,
+            0.8115070856333344,
+            0.8162345792854011
+          ],
+          "forgetting": 0.26626255678404687,
+          "recovery_rounds": 18.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.8037610211584553,
+          "attack_f1": 0.6100131468350611,
+          "balanced_accuracy": 0.7193734820495307,
+          "brier_score": 0.14951163398927406,
+          "expected_calibration_error": 0.18758511166153377,
+          "macro_f1": 0.7394540045683142,
+          "mcc": 0.5796782195841409,
+          "pr_auc": 0.9663938150971184,
+          "precision": 0.9973220577871741,
+          "recall": 0.43938029743239465,
+          "roc_auc": 0.98168257629855
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 75.26048567400005,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:29:11+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 78.46734152299996
+      }
+    },
+    "TON_IoT/ecotrust_class_balanced_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/ecotrust_class_balanced_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:29:11+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.8006599695022771,
+          "backward_transfer": -0.2292829161136159,
+          "final_window_macro_f1": [
+            0.4874947894956232,
+            0.8251611802889622,
+            0.7873692765537763,
+            0.940819770631038,
+            0.9624548305419863
+          ],
+          "forgetting": 0.2292829161136159,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.8990445618106693,
+          "attack_f1": 0.8548168249660787,
+          "balanced_accuracy": 0.8878829041054778,
+          "brier_score": 0.06459207602378408,
+          "expected_calibration_error": 0.03632739715196216,
+          "macro_f1": 0.8887173177939729,
+          "mcc": 0.7774570803714055,
+          "pr_auc": 0.9266057760596488,
+          "precision": 0.858821685991852,
+          "recall": 0.8508491415442888,
+          "roc_auc": 0.9656416252703696
+        },
+        "method": "ecotrust_class_balanced_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 60.00480443699996,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:28:08+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 63.03604747999998
+      }
+    },
+    "TON_IoT/naive_fedavg/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:22:36+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.7473379155379665,
+          "backward_transfer": -0.29834554872564123,
+          "final_window_macro_f1": [
+            0.4998983119788489,
+            0.7300128854431301,
+            0.644822320149929,
+            0.8923441209977077,
+            0.9696119391202169
+          ],
+          "forgetting": 0.29834554872564123,
+          "recovery_rounds": null
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.8637768547538743,
+          "attack_f1": 0.783135650282281,
+          "balanced_accuracy": 0.8268088401792459,
+          "brier_score": 0.10607483033055581,
+          "expected_calibration_error": 0.09705420116543056,
+          "macro_f1": 0.841918426341169,
+          "mcc": 0.6948948310578332,
+          "pr_auc": 0.9386330983483591,
+          "precision": 0.8820784069695085,
+          "recall": 0.7041510136918253,
+          "roc_auc": 0.9694863956244115
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 97.88047631300003,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:20:54+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 101.50071279400004
+      }
+    },
+    "TON_IoT/naive_fedavg/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:20:54+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.757708842875431,
+          "backward_transfer": -0.2836552432440132,
+          "final_window_macro_f1": [
+            0.49996610858808377,
+            0.6981805122049787,
+            0.6748925961075409,
+            0.9417209892339422,
+            0.9737840082426092
+          ],
+          "forgetting": 0.2836552432440132,
+          "recovery_rounds": 9.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.8752290991118004,
+          "attack_f1": 0.8028379003650198,
+          "balanced_accuracy": 0.8409584070704875,
+          "brier_score": 0.09408336096564639,
+          "expected_calibration_error": 0.08955625648863089,
+          "macro_f1": 0.8557877281938533,
+          "mcc": 0.7213132465324461,
+          "pr_auc": 0.9482022883983878,
+          "precision": 0.8959608323133414,
+          "recall": 0.7272501474743084,
+          "roc_auc": 0.973527731379428
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 97.07982592999997,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:19:14+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 100.48256580500015
+      }
+    },
+    "TON_IoT/naive_fedavg/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/naive_fedavg/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:19:13+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.8329584854149982,
+          "backward_transfer": -0.18978710376276708,
+          "final_window_macro_f1": [
+            1.0,
+            0.7337107420110811,
+            0.5633912278339704,
+            0.8893901040856682,
+            0.9783003531442707
+          ],
+          "forgetting": 0.18978710376276708,
+          "recovery_rounds": 18.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.8513811016278238,
+          "attack_f1": 0.7544702046081628,
+          "balanced_accuracy": 0.805599638299854,
+          "brier_score": 0.10681536883844352,
+          "expected_calibration_error": 0.10263201179089551,
+          "macro_f1": 0.8239552665291444,
+          "mcc": 0.6676830571886748,
+          "pr_auc": 0.9335038664987292,
+          "precision": 0.8919720398220716,
+          "recall": 0.6536992765997082,
+          "roc_auc": 0.9694648589421176
+        },
+        "method": "naive_fedavg",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 97.062604572,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:17:33+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 100.45971104299997
+      }
+    },
+    "TON_IoT/reservoir_replay/seed_27182": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_27182/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_27182/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_27182/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_27182/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:28:07+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.8555133596229882,
+          "backward_transfer": -0.16058225230120615,
+          "final_window_macro_f1": [
+            0.4998813599538999,
+            0.9824800009499797,
+            0.8854033469642053,
+            0.936986179684878,
+            0.9728159105619789
+          ],
+          "forgetting": 0.16058225230120615,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.9566528213081152,
+          "attack_f1": 0.9395246092627055,
+          "balanced_accuracy": 0.9583437538162212,
+          "brier_score": 0.031621578582904666,
+          "expected_calibration_error": 0.015710028800752854,
+          "macro_f1": 0.952872382805872,
+          "mcc": 0.9064854728301862,
+          "pr_auc": 0.98497051680826,
+          "precision": 0.9163026797308464,
+          "recall": 0.9639541742991089,
+          "roc_auc": 0.9922014325706066
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 107.103428656,
+        "seed": 27182,
+        "stage": 11,
+        "started_at": "2026-10-24T06:26:15+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 111.94727939900008
+      }
+    },
+    "TON_IoT/reservoir_replay/seed_31415": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_31415/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_31415/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_31415/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_31415/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:26:15+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.8623437620869069,
+          "backward_transfer": -0.14927621967828883,
+          "final_window_macro_f1": [
+            0.4999491611591256,
+            0.9834386827861488,
+            0.908472263068892,
+            0.9536715185347632,
+            0.9661871848856054
+          ],
+          "forgetting": 0.14927621967828883,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.9633116073268336,
+          "attack_f1": 0.9482777072790374,
+          "balanced_accuracy": 0.9632015704720213,
+          "brier_score": 0.02653869754357624,
+          "expected_calibration_error": 0.014721666093131813,
+          "macro_f1": 0.9599258817293591,
+          "mcc": 0.9201143782809411,
+          "pr_auc": 0.9891133838605717,
+          "precision": 0.934152659798783,
+          "recall": 0.9628364742773758,
+          "roc_auc": 0.9945606323801837
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 104.03785869400008,
+        "seed": 31415,
+        "stage": 11,
+        "started_at": "2026-10-24T06:24:27+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 108.15322775899995
+      }
+    },
+    "TON_IoT/reservoir_replay/seed_42": {
+      "skipped": false,
+      "status": "completed",
+      "summary": {
+        "artifacts": {
+          "checkpoint": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_42/checkpoint.pt",
+          "global_model": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_42/global_model.pt",
+          "progress": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_42/progress.json",
+          "window_metrics": "project://results/publication/stage11/TON_IoT/reservoir_replay/seed_42/window_metrics.csv"
+        },
+        "completed_at": "2026-10-24T06:24:27+00:00",
+        "completed_windows": 5,
+        "continual_metrics": {
+          "average_accuracy": 0.8568089538891653,
+          "backward_transfer": -0.1563318091689207,
+          "final_window_macro_f1": [
+            0.49998305486833633,
+            0.9879898394577591,
+            0.8862851098801876,
+            0.9408249597660192,
+            0.9689618054735247
+          ],
+          "forgetting": 0.1563318091689207,
+          "recovery_rounds": 0.0
+        },
+        "dataset": "TON_IoT",
+        "device": "cpu",
+        "final_test_metrics": {
+          "accuracy": 0.9572384474400547,
+          "attack_f1": 0.94070587527632,
+          "balanced_accuracy": 0.9604475177745351,
+          "brier_score": 0.02900020816568269,
+          "expected_calibration_error": 0.012562634008782594,
+          "macro_f1": 0.9536338338465742,
+          "mcc": 0.9084062374773237,
+          "pr_auc": 0.9879052177825342,
+          "precision": 0.9121609798775153,
+          "recall": 0.9710950355490702,
+          "roc_auc": 0.993642864572014
+        },
+        "method": "reservoir_replay",
+        "peak_rss_mb": 2539.0078125,
+        "process_cpu_seconds_this_invocation": 106.585391287,
+        "seed": 42,
+        "stage": 11,
+        "started_at": "2026-10-24T06:22:36+00:00",
+        "status": "completed",
+        "stream_protocol": {
+          "dataset": "TON_IoT",
+          "order_column": "ts",
+          "order_type": "chronological",
+          "rows": 368834,
+          "test_rows": 92209,
+          "test_usage": "final evaluation only",
+          "unique_values": 103202,
+          "valid_fraction": 1.0,
+          "window_sizes": [
+            73767,
+            73767,
+            73767,
+            73767,
+            73766
+          ],
+          "windows": 5
+        },
+        "wall_time_seconds": 110.74566360299991
+      }
+    }
+  },
+  "stage": 11,
+  "started_at": "2026-10-24T06:06:45+00:00",
+  "status": "completed",
+  "stream_protocols": {
+    "CICIoT2023": {
+      "dataset": "CICIoT2023",
+      "order_column": "original_row_position",
+      "order_type": "source_order",
+      "rows": 200000,
+      "test_rows": 50000,
+      "test_usage": "final evaluation only",
+      "unique_values": 200000,
+      "valid_fraction": null,
+      "window_sizes": [
+        40000,
+        40000,
+        40000,
+        40000,
+        40000
+      ],
+      "windows": 5
+    },
+    "Edge-IIoTset": {
+      "dataset": "Edge-IIoTset",
+      "order_column": "icmp.transmit_timestamp",
+      "order_type": "chronological",
+      "rows": 126240,
+      "test_rows": 31560,
+      "test_usage": "final evaluation only",
+      "unique_values": 73,
+      "valid_fraction": 1.0,
+      "window_sizes": [
+        25248,
+        25248,
+        25248,
+        25248,
+        25248
+      ],
+      "windows": 5
+    },
+    "TON_IoT": {
+      "dataset": "TON_IoT",
+      "order_column": "ts",
+      "order_type": "chronological",
+      "rows": 368834,
+      "test_rows": 92209,
+      "test_usage": "final evaluation only",
+      "unique_values": 103202,
+      "valid_fraction": 1.0,
+      "window_sizes": [
+        73767,
+        73767,
+        73767,
+        73767,
+        73766
+      ],
+      "windows": 5
+    }
+  }
+}
